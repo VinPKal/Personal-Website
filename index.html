@@ -1,64 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vineeth Kalister</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Portfolio Website-Brad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="header">
-        <h1>Vineeth Kalister</h1>
-        <p>Computer Engineering Graduate</p>
-    </div>
-    <div class="container">
-        <div class="section" id="about">
-            <h2>About Me</h2>
-            <p>Hi, I'm Vineeth Kalister, a recent graduate from the University of Illinois at Urbana-Champaign with a Bachelor of Science in Computer Engineering. I have a strong foundation in computer systems and programming, with hands-on experience in AI, robotics, and game development.</p>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vineeth.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
         </div>
-        <div class="section" id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming: Python (Pygame, NumPy), Java, C++, C, C#, JavaScript, HTML, CSS, x86 Assembly</li>
-                <li>Cloud/DevOps: AWS, Ansible, Azure</li>
-                <li>Databases: MySQL, MongoDB</li>
-                <li>Technologies: TensorFlow, PyTorch, SystemVerilog, UiPath, Discord Dev Portal, GraphML, Git, Unix, Linux, FPGA</li>
-            </ul>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, it's me, Vineeth.</h2>
+                <p class="hero_desc">Computer Engineer from UIUC</p>
+            </div>
+            </div>
         </div>
-        <div class="section" id="work">
-            <h2>Work Experience</h2>
-            <ul>
-                <li>
-                    <h3>AI and Cognitive Robotics Intern</h3>
-                    <p>US Cellular, Chicago, IL (Jun 2023 - Aug 2023)</p>
-                    <p>Developed automation solutions using UiPath, C#, and .Net, integrated error handling, and led meetings with the Supply Chain. Achievements include a 70% time saving compared to manual work and a projected $275k annual savings in licensing costs.</p>
-                </li>
-            </ul>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <div class="image-container">
+                        <img src="images/human.jpeg" class="imageAboutPage" alt=""  style="width:50%">
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                                <ul>
+                                    <li>Name: Vineeth Kalister</li>
+                                    <li>Age: 22</li>
+                                    <li>Occupation: Software Engineer</li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <p> Passionate Computer Engineering graduate from the University of Illinois at Urbana-Champaign with a 
+                            strong foundation in computer systems, programming, AI, robotics, and game development. I have gained practical experience 
+                            through internships like at US Cellular, where I developed automation solutions that improved efficiency and achieved significant
+                            cost savings. I have worked on impactful projects such as developing a Q-Learning AI agent for a Snake game and enhancing the 
+                            performance of a Discord bot for a cybersecurity club. Outside of academics, I actively explore new technologies, participate 
+                            in hackathons, and contribute to open-source projects. I am excited to continue my journey in the tech industry, contributing 
+                            to cutting-edge projects, collaborating with professionals, driving innovation, and making a positive impact through my work. 
+                            to contribute to cutting-edge projects and collaborate with like-minded professionals to drive technological innovation. I am 
+                            always eager to learn new skills, take on challenging projects, and make a positive impact through my work.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="card-img-top" src="images/USC.jpeg" alt="Card image" style="width:50%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">US Cellular AI and Cognitive Robotics Internship</h4>
+                            <p class="card-text">I spearheaded the development and deployment of an automated system that streamlines UPS 
+                                invoice processing. This bot successfully logs in to the UPS portal, downloads invoices, modifies them as 
+                                needed, and emails them directly to Accounts Payable on a weekly basis. This automation not only eliminates
+                                manual processing inefficiencies (resulting in a 70% improvement), but also safeguards against late fees by
+                                ensuring timely invoice delivery, potentially saving the company an estimated $275,000 annually in licensing
+                                 costs.
+                                To further enhance the project's impact, I implemented robust error handling mechanisms that proactively 
+                                notify the support team of any potential issues, guaranteeing system stability and smooth operation.
+                                Furthermore, I played a key leadership role by facilitating cross-functional meetings with the Supply 
+                                Chain team, fostering an iterative development process that yielded a remarkable 75% improvement in product 
+                                quality.  To ensure the team's long-term success, I meticulously documented the system and provided 
+                                comprehensive knowledge transfer sessions, empowering them for independent maintenance and ongoing support.</p>
+                            <div class="text-center">
+                                <!-- <a href="#" class="btn btn-success">Link</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <div class="image-container">
+                            <img class="card-img-top" src="images/OIG4.jpeg" alt="Card image" style="width:50%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Smart AC Unit</h4>
+                            <p class="card-text">I led a team of three in designing and prototyping an innovative "Smart AC Unit" device that
+                                 enables users to remotely control and automate the operation of a window-mounted air conditioning unit 
+                                 through a mobile application. Our system integrated two high-precision SHT30 temperature and humidity sensors
+                                  to accurately calculate the room's heat index within ±0.2881°C. An ESP32-S3 microcontroller served as the 
+                                  central control unit, interfacing with the sensors, a user-friendly Android app via WiFi, and a pair of 
+                                  high-torque MS24 servo motors to physically manipulate the cooling and temperature knobs on a 5000 BTU 
+                                  Arctic King AC unit.
+                                Key accomplishments included developing a robust 3D-printed actuator mount to reliably turn the analog knobs, 
+                                programming the ESP32 with heat index calculations and logic to adjust settings based on the user's scheduled 
+                                temperatures in the app, and overcoming challenges like managing heat dispersion that caused sensor 
+                                inaccuracies. While a damaged display unit prevented showing the temperature on the device itself, our 
+                                final prototype successfully demonstrated wireless monitoring and automated control of the AC settings for 
+                                improved energy efficiency and user convenience. This intensive project showcased my skills in embedded 
+                                systems design, PCB layout, mobile app development using Android Studio, and the full-stack integration of 
+                                hardware components with software across firmware, networking, and a user interface. Leading this capstone 
+                                highlighted my abilities in system architecture, team collaboration, and delivering a functional IoT product 
+                                from concept to implementation.</p>
+                            <div class="text-center">
+                                <!-- <a href="#" class="btn btn-success">Link</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <div class="image-container">
+                            <img class="card-img-top" src="images/UE5.jpeg" alt="Card image" style="width:50%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">UE5</h4>
+                            <p class="card-text">I implemented intricate player mechanics, including movement, weapon 
+                                functionalities, and health systems, contributing to an immersive action-adventure experience. I designed and created multiple worlds and 
+                                integrated complex AI enemies, each with unique behaviors and challenges, including melee, laser, and mortar enemies. I also developed 
+                                the final boss, ensuring an engaging endgame. Additionally, I was responsible for the game's audio design, bug fixing, and the creation 
+                                of various game screens and the central hub. This project, featuring a universe explorer completing missions across diverse planets, 
+                                showcases my ability to handle multiple aspects of game development and deliver a polished final product.</p>
+                            <div class="text-center">
+                                <!-- <a href="#" class="btn btn-success">Link</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <div class="image-container">
+                            <img class="card-img-top" src="images/SQL.jpeg" alt="Card image" style="width:50%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">MaydayMaster</h4>
+                            <p class="card-text">
+                                As part of a comprehensive team software engineering project, I played a key role in the design, development, and 
+                                deployment of an innovative flight rerouting application. Hosted on Google Cloud Platform, our full-stack application 
+                                integrated a modern user interface allowing air traffic controllers to search flights, view past rerouting decisions, and 
+                                store search history. The core functionality leveraged complex SQL queries on a cloud MySQL instance to efficiently find the 
+                                nearest airport matching the aircraft's runway length and coordinate requirements. To optimize performance and ensure data integrity, 
+                                I implemented advanced database techniques including stored procedures, triggers, and transactions. While initial plans to incorporate 
+                                a machine learning model for intelligent rerouting recommendations faced scalability challenges, our final GCP-deployed application 
+                                successfully automated critical rerouting decisions. This project showcased my skills in cloud deployment, full-stack development, database 
+                                administration, and integrating modern software architectures to solve complex, real-world aviation problems.
+                            </p>
+                            <div class="text-center">
+                                <!-- <a href="#" class="btn btn-success">Link</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <div class="image-container">
+                            <img class="card-img-top" src="images/SnakeAI.jpeg" alt="Card image" style="width:50%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Snake Game AI</h4>
+                            <p class="card-text">I developed an intelligent agent using Q-Learning algorithms to play the classic Snake game, achieving an impressive 
+                                average score of X points over 1000 test episodes. I implemented state space discretization, Q-table updates, and strategic exploration
+                                 techniques, optimizing the agent's decision-making capabilities by 25%. To rigorously evaluate the agent's performance, I engineered 
+                                 a custom game environment with obstacles and configurable parameters, enabling 20% more gameplay variations for thorough testing 
+                                 scenarios. Pygame integration facilitated seamless game visualization and enabled human vs AI gameplay experiences. Rigorous testing 
+                                 was conducted, including early checks and comparisons against gold standard results, validating 95% accuracy in the agent's learning 
+                                 process. Game performance was optimized through efficient data structures and algorithms, reducing the memory footprint by 15%. 
+                                 Furthermore, I enhanced the game's difficulty by strategically placing obstacles and food, increasing the time spent dodging enemies 
+                                 by 40%. Configurable level parameters were introduced, enabling 20% more gameplay variations to comprehensively evaluate the agent's 
+                                 adaptability across diverse scenarios. Finally, runtime was accelerated by 30% through fine-tuning the Q-learning algorithm and 
+                                 parallelizing computations, leading to faster convergence and improved overall efficiency.</p>
+                            <div class="text-center">
+                                <!-- <a href="#" class="btn btn-success">Link</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <div class="image-container">
+                            <img class="card-img-top" src="images/Linux.jpeg" alt="Card image" style="width:50%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Linux Based OS</h4>
+                            <p class="card-text">I led a team of four to design and implement a real-time embedded operating system (OS) showcasing core 
+                                functionalities like paging, device drivers, and system calls. This OS achieved a 10% reduction in memory footprint, 
+                                demonstrating our expertise in low-level programming concepts like interrupt handling, memory management, process management,
+                                I/O, virtual memory, and scheduling algorithms.
+
+                                We further optimized the system by creating low-latency device drivers for the terminal, file system, and RTC, achieving a 
+                                remarkable 99.9% uptime and a 50% reduction in errors. To enable efficient resource utilization, we implemented a multi-tasking 
+                                and multi-terminal environment. This, combined with context switching, round-robin scheduling, and memory virtualization, resulted
+                                 in a 20% increase in user concurrency. Additionally, by writing over 15 unit tests and achieving 90% code coverage, we ensured 
+                                 system stability. Finally, we implemented code optimization techniques that reduced system response time by a further 20%.</p>
+                            <div class="text-center">
+                                <!-- <a href="#" class="btn btn-success">Link</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <div class="image-container">
+                            <img class="card-img-top" src="images/DiscordBot.jpeg" alt="Card image" style="width:50%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">SIGPwny Discord Bot</h4>
+                            <p class="card-text">I collaborated with a team of 6 to significantly enhance SIGPwny's Discord bot. We implemented a point system to 
+                                gamify the club's coding challenges, boosting member engagement. To ensure smooth operation with our growing user base (250+ members), 
+                                I leveraged multithreading, achieving a 20% improvement in the bot's performance. This enhanced scalability and efficiency for handling 
+                                member requests. Additionally, I devised an automated system to synchronize content updates between the SIGPwny website and Discord 
+                                server. This streamlined process reduced update latency by 10%, ensuring real-time information dissemination for club members.</p>
+                            <div class="text-center">
+                                <!-- <a href="#" class="btn btn-success">Link</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <div class="image-container">
+                            <img class="card-img-top" src="images/AIEnemy.jpeg" alt="Card image" style="width:50%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">AI Enemy Controller</h4>
+                            <p class="card-text">I developed a real-time game using an FPGA for efficient processing and a game engine for visuals. To achieve smooth 
+                                gameplay, I created a low-latency interface between the FPGA and the game engine using SystemVerilog, specifically optimizing character
+                                 movement calculations. Additionally, I built a playable character with damage mechanics, reducing processing time for character 
+                                 interactions by 15%.  To enhance player engagement, I implemented a health system with scoring based on damage dealt, leading to a 
+                                 10% increase. Finally, I introduced a sophisticated AI system with A* pathfinding for 20 enemy units, enabling strategic navigation 
+                                 and diverse attack behaviors. This resulted in a 30% increase in overall game complexity, creating a more immersive and challenging 
+                                 gaming experience.</p>
+                            <div class="text-center">
+                                <!-- <a href="#" class="btn btn-success">Link</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <div class="image-container">
+                            <img class="card-img-top" src="images/POI.jpeg" alt="Card image" style="width:50%">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Open Flights Data Analysist</h4>
+                            <p class="card-text">In collaboration with a team of four, I designed and developed a C++ program to manage a massive dataset of over 
+                                10,000 U.S. street network resources from Harvard's Dataverse. This program encompassed shapefiles, node/edge lists, and GraphML 
+                                formats. To optimize route calculations within this dataset, I implemented a streamlined shortest path algorithm. This innovative 
+                                approach achieved a significant 90% reduction in time complexity, going from O(n^2) to O(n*logn).  Furthermore, by leveraging 
+                                Dijkstra's algorithm, I designed a dedicated shortest path finding system for California Points of Interest (POIs). This system 
+                                reduced route calculation times by 50%, significantly improving efficiency.  Finally, I meticulously fine-tuned Dijkstra's algorithm
+                                 for network analysis, resulting in a 30% improvement in runtime performance. These optimizations ensured faster and more efficient 
+                                 processing of large-scale network data.</p>
+                            <div class="text-center">
+                                <!-- <a href="#" class="btn btn-success">Link</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <div class="image-container">
+                            <img class="card-img-top" src="images/MazeGame.jpeg" alt="Card image" style="width:50%">
+                        </div><
+                        <div class="card-body">
+                            <h4 class="card-title">JavaScript Maze Game</h4>
+                            <p class="card-text">I built a multiplayer JavaScript maze game with encrypted user authentication. I developed user management with secure 
+                                login using hashing and encryption techniques. The game stores user data like credentials and high scores in a database. This 
+                                demonstrated abilities in JavaScript, web development, databases, and security practices.</p>
+                            <div class="text-center">
+                                <!-- <a href="#" class="btn btn-success">Link</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;">
+                        <div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Schaumburg,+IL,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                        </div>
+                        <a class="googlecoder" href="https://kbj9qpmy.com/hrn" id="enable-maps-data">InMotion Hosting</a>
+                        <style>
+                            #my-map-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}
+                        </style>
+                        </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                    
+                </div>
+
+            </div>
         </div>
-        <div class="section" id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Snake Game AI</h3>
-                    <p>Developed a Q-Learning AI agent for a Snake game using Python and Pygame, achieving significant performance optimizations and strategic gameplay variations.</p>
-                </li>
-                <li>
-                    <h3>Linux Based OS</h3>
-                    <p>Led a team to develop an OS using x86 Assembly and C, achieving high system stability and performance through various optimization techniques.</p>
-                </li>
-                <li>
-                    <h3>AI Enemy Controller</h3>
-                    <p>Implemented a low-latency SystemVerilog interface using FPGA for smooth gameplay, along with an A* pathfinding algorithm for AI units.</p>
-                </li>
-                <li>
-                    <h3>Open Flights Data Analysis</h3>
-                    <p>Developed a program to analyze large data sets using C++ and GraphML, significantly reducing time complexity and improving performance.</p>
-                </li>
-            </ul>
+    </section>
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
-    </div>
-    <div class="footer">
-        <p>Contact: <a href="mailto:vin.kalister@gmail.com">vin.kalister@gmail.com</a> | <a href="https://www.linkedin.com/in/vineeth-kalister-045215211" target="_blank">LinkedIn</a></p>
-    </div>
+    </footer>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
 </body>
-</html>

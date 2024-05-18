@@ -1,62 +1,81 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
 }
 
-.header {
-    background-color: #2b90d9;
-    color: white;
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('images/blob.webp');
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
     text-align: center;
-    padding: 50px 20px;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 50px;
-}
-
-.header p {
-    margin: 10px 0 0;
-    font-size: 24px;
-}
-
-.container {
-    padding: 20px;
-}
-
-.section {
-    margin-bottom: 40px;
-}
-
-.section h2 {
-    color: #2b90d9;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.section ul li {
-    background: white;
-    margin-bottom: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
 }
 
-.footer a {
-    color: #2b90d9;
-    text-decoration: none;
+/* spacing on all sections */
+/* #about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+} */
+#contact {
+    padding-bottom: 4rem;
+}
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+.image-container {
+    text-align: center;
 }
